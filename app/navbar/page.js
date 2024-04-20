@@ -10,11 +10,21 @@ import {
 } from "@/components/ui/sheet";
 import { AlignJustify } from "lucide-react";
 import Link from "next/link";
+import { Jersey_20 } from "next/font/google";
+const Jersey20 = Jersey_20({
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between py-4 px-4 xl:px-10">
-      <p className={`text-3xl font-bold text-[#27221f]`}>Shortly</p>
+    <div className="flex items-center justify-between lg:justify-around py-4 px-4 xl:px-10">
+      <p
+        className={`text-5xl font-bold bg-gradient-to-r from-rose-600 to-rose-600 bg-clip-text text-transparent ${Jersey20.className}`}
+      >
+        Shortly
+      </p>
 
       <div className="">
         <div className="md:hidden">
@@ -29,7 +39,7 @@ const Navbar = () => {
                     className="font-medium hover:bg-secondary w-full  rounded-md"
                     href="/login"
                   >
-                    <SheetClose className="font-medium hover:bg-secondary w-full py-2 rounded-md">
+                    <SheetClose className="font-medium hover:bg-secondary hover:text-rose-600 w-full py-2 rounded-md">
                       Login
                     </SheetClose>
                   </Link>
@@ -37,7 +47,7 @@ const Navbar = () => {
                     className="font-medium hover:bg-secondary w-full rounded-md"
                     href="/register"
                   >
-                    <SheetClose className="font-medium hover:bg-secondary w-full py-2 rounded-md">
+                    <SheetClose className="font-medium hover:bg-secondary hover:text-rose-600 w-full py-2 rounded-md">
                       Register
                     </SheetClose>
                   </Link>
@@ -47,10 +57,10 @@ const Navbar = () => {
           </Sheet>
         </div>
         <div className="hidden md:flex items-center gap-5 ">
-          <Link className="font-medium" href="/login">
+          <Link className="font-medium hover:text-rose-600" href="/login">
             Login
           </Link>
-          <Link className="font-medium" href="/register">
+          <Link className="font-medium hover:text-rose-600" href="/register">
             Register
           </Link>
         </div>
