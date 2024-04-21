@@ -13,8 +13,8 @@ import { Button } from "@/components/ui/button";
 
 const Register = () => {
   return (
-    <div className="">
-      <Card className="w-1/3 mx-auto mt-32">
+    <div className="mx-4 lg:mx-0">
+      <Card className="w-full lg:w-1/3 mx-auto mt-20 lg:mt-32">
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl">Create an account</CardTitle>
           <CardDescription>

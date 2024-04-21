@@ -41,7 +41,7 @@ export default function Home() {
   return (
     <main className="mx-auto">
       <div className="flex justify-evenly items-center mt-16 gap">
-        <div className="w-[450px]">
+        <div className="w-[450px] px-4 lg:px-0">
           <h2 className={`text-5xl font-bold ${AllertaStencil.className}`}>
             Strengthen digital ties with Shortly.
           </h2>
@@ -69,11 +69,11 @@ export default function Home() {
 
       <div className="mt-20 bg-rose-50 py-10">
         <p
-          className={`text-3xl font-bold text-center px-3 ${EpilogueFont.className}`}
+          className={`text-3xl font-bold text-center px-4 ${EpilogueFont.className}`}
         >
           Sign up for a free account and put Shortly to work
         </p>
-        <Card className="w-full lg:w-2/3 mx-auto mt-10 py-5 px-3 lg:p-8">
+        <Card className="w-full lg:w-2/3 mx-auto mt-10 py-5 px-4 lg:p-8">
           <div className="">
             <Button
               variant="link"
