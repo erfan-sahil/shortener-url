@@ -1,13 +1,12 @@
 "use client";
 import Image from "next/image";
-import CoverImg from "@/public/images/www-bro.png";
+import CoverImg from "@/public/images/www-search.png";
 import { Allerta_Stencil, Epilogue, Work_Sans } from "next/font/google";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import ShortLinkComponent from "./shortLinkComponent/ShortLinkComponent";
 import QrCodeComponent from "./qrCodeComponent/QrCodeComponent";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
 
 const AllertaStencil = Allerta_Stencil({
   weight: "400",
@@ -41,7 +40,7 @@ export default function Home() {
 
   return (
     <main className="mx-auto">
-      <div className="flex justify-evenly items-center mt-24 gap">
+      <div className="flex justify-evenly items-center mt-16 gap">
         <div className="w-[450px]">
           <h2 className={`text-5xl font-bold ${AllertaStencil.className}`}>
             Strengthen digital ties with Shortly.
@@ -56,7 +55,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div>
+        <div className="hidden lg:flex">
           <Image
             src={CoverImg}
             alt="Picture of the author"
@@ -70,11 +69,11 @@ export default function Home() {
 
       <div className="mt-20 bg-rose-50 py-10">
         <p
-          className={`text-3xl font-bold text-center ${EpilogueFont.className}`}
+          className={`text-3xl font-bold text-center px-3 ${EpilogueFont.className}`}
         >
           Sign up for a free account and put Shortly to work
         </p>
-        <Card className="w-2/3 mx-auto mt-10 p-8">
+        <Card className="w-full lg:w-2/3 mx-auto mt-10 py-5 px-3 lg:p-8">
           <div className="">
             <Button
               variant="link"

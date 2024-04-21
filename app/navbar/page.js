@@ -19,7 +19,7 @@ const Jersey20 = Jersey_20({
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between lg:justify-around py-4 px-4 xl:px-10">
+    <div className="flex items-center justify-between lg:justify-around py-4 px-4 xl:px-0">
       <p
         className={`text-5xl font-bold bg-gradient-to-r from-rose-600 to-rose-600 bg-clip-text text-transparent ${Jersey20.className}`}
       >
@@ -56,7 +56,7 @@ const Navbar = () => {
             </SheetContent>
           </Sheet>
         </div>
-        <div className="hidden md:flex items-center gap-5 ">
+        <div className="hidden md:flex items-center gap-10 ">
           <Link className="font-medium hover:text-rose-600" href="/login">
             Login
           </Link>
